@@ -1,0 +1,55 @@
+{
+  // Visit https://aka.ms/tsconfig to read more about this file
+  "compilerOptions": {
+    // File Layout
+     "rootDir": "./src",
+     "outDir": "./dist",
+
+    // Environment Settings
+    // See also https://aka.ms/tsconfig/module
+    "module": "esnext",
+    "moduleResolution": "node",                // Resolve like Node.js
+    "allowJs": true,                           // Allow .js files too
+    "esModuleInterop": true,                   // CommonJS interop
+    "allowSyntheticDefaultImports": true,      // Default import support
+    "forceConsistentCasingInFileNames": true,  // Avoid case mismatch bugs
+
+    "target": "esnext",
+    "types": [],
+    // For nodejs:
+     "lib": ["esnext","dom","dom.iterable"],
+    // "types": ["node"],
+    // and npm install -D @types/node
+    "resolveJsonModule": true,                 // Allow importing .json files
+
+    // Other Outputs
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+    "verbatimModuleSyntax": true,               // Keep imports/exports as written
+
+    // Stricter Typechecking Options
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+
+    // Style Options
+    // "noImplicitReturns": true,
+    // "noImplicitOverride": true,
+    // "noUnusedLocals": true,
+    // "noUnusedParameters": true,
+    // "noFallthroughCasesInSwitch": true,
+    // "noPropertyAccessFromIndexSignature": true,
+
+    // Recommended Options
+    "strict": true,
+    "jsx": "react-jsx",
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "noUncheckedSideEffectImports": true,
+    "moduleDetection": "force",
+    "skipLibCheck": true,
+  },
+  "include": ["src"],                          // Your source files
+  "exclude": ["node_modules", "dist"],          // Exclude build artifacts
+
+}
